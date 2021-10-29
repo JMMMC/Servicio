@@ -1,14 +1,3 @@
-
-                                            /*  Practica 2 2do Parcial
-                                                
-                                                Sistemas Expertos
-                                                 
-                                                19110255
-                                                
-												Jose Maria Medina Martrin del Campo
-												
-												6E6  */
-
 # include <stdio.h>
 # include <stdlib.h>
 # include <time.h>
@@ -46,7 +35,7 @@ main()
 	    do{
 	    	system("color 30");
 			system("cls");
-		    printf("\n ¿Le has hecho algun servicio?"); 
+		    printf("\n Â¿Le has hecho algun servicio?"); 
 	        printf("\n SI = 1"); 
 	        printf("\n NO = 0"); 
 	        printf("\n R: "); 
@@ -62,10 +51,10 @@ main()
 		  }while(des==100);
 	    if(des==1)
 	        {
-	        	printf("\n ¿Cuantos?");
+	        	printf("\n Â¿Cuantos?");
 	        	printf("\n R: "); 
 	        	scanf("%i",&nser);
-	        	printf("\n ¿Cuantos Kilometros has recorrido desde el ultimo servicio?"); 
+	        	printf("\n Â¿Cuantos Kilometros has recorrido desde el ultimo servicio?"); 
 		        printf("\n aprox"); 
 		        printf("\n R: "); 
 	            scanf("%f",&kmr);	            
@@ -73,7 +62,7 @@ main()
 		else
 		    { 
 			    nser=0; 
-			    printf("\n ¿Cuantos Kilometros has recorrido?"); 
+			    printf("\n Â¿Cuantos Kilometros has recorrido?"); 
 		        printf("\n aprox"); 
 		        printf("\n R: "); 
 	            scanf("%f",&kmr);
@@ -84,7 +73,7 @@ main()
 			//r=1;
 			system("color 30");
 			system("cls");
-		    printf("\n ¿Quieres hacer otra consulta?"); 
+		    printf("\n Â¿Quieres hacer otra consulta?"); 
 		    printf("\n SI = 1"); 
 	        printf("\n NO = 0"); 
 	        printf("\n R: "); 
@@ -124,8 +113,8 @@ float inicializacion()
     float z;
     
     
-    getline(archivo, linea);  // Leemos la primer línea para descartarla, pues es el encabezado
-    while (getline(archivo, linea))  // Leemos todas las líneas
+    getline(archivo, linea);  // Leemos la primer lÃ­nea para descartarla, pues es el encabezado
+    while (getline(archivo, linea))  // Leemos todas las lÃ­neas
         {
             // Extraer todos los valores de esa fila
             stringstream stream(linea); // Convertir la cadena a un stream
@@ -280,7 +269,7 @@ void motor_de_explicacion(int a)
 	    {
 	    	system("color 4f");
 	    	printf("\n  **************************************************************************************** \n");   
-			printf("\n  ¡¡¡¡¡¡Ya deberias haber llevado a mantenimiento tu moto hace %0.02f kilomestros!!!!!!",kmt);    
+			printf("\n  Â¡Â¡Â¡Â¡Â¡Â¡Ya deberias haber llevado a mantenimiento tu moto hace %0.02f kilomestros!!!!!!",kmt);    
 			printf("\n\n  **************************************************************************************** \n");  
 	        printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"); 
 	        system("pause");
